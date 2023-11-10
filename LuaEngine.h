@@ -399,7 +399,7 @@ public:
     bool OnExpire(Player* pPlayer, ItemTemplate const* pProto);
     bool OnRemove(Player* pPlayer, Item* item);
     void OnAdd(Player* pPlayer, Item* item);
-    void HandleGossipSelectOption(Player* pPlayer, Item* item, uint32 sender, uint32 action, const std::string& code);
+    bool HandleGossipSelectOption(Player* pPlayer, Item* item, uint32 sender, uint32 action, const std::string& code);
 
     /* Creature */
     void OnDummyEffect(WorldObject* pCaster, uint32 spellId, SpellEffIndex effIndex, Creature* pTarget);
